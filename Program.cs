@@ -3,10 +3,10 @@
 // 782 -> 8
 // 918 -> 1
 
-int num = new Random().Next(100, 1000);
+/*int num = new Random().Next(100, 1000);
 int u = (num / 10) % 10 ; 
 
-Console.WriteLine($"Вторая цифра числа {num} - это {u}");
+Console.WriteLine($"Вторая цифра числа {num} - это {u}");*/
 
 // Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет. (Максимум 100000)
 // 645 -> 5
@@ -17,3 +17,20 @@ Console.WriteLine($"Вторая цифра числа {num} - это {u}");
 // 6 -> да
 // 7 -> да
 // 1 -> нет
+
+Console.WriteLine("Введите номер дня недели");
+int num = Convert.ToInt32(Console.ReadLine()!);
+
+if (num > 7 || num < 1);
+{
+    Console.WriteLine("В неделе 7 дней");
+}
+
+if (num == 6 || num == 7)
+{
+    Console.WriteLine("Это выходной");
+} 
+else if (num > 1 && num < 6);
+{    
+    Console.WriteLine("Это будний день");
+}
