@@ -21,16 +21,11 @@ Console.WriteLine($"Вторая цифра числа {num} - это {u}");*/
 Console.WriteLine("Введите номер дня недели");
 int num = Convert.ToInt32(Console.ReadLine()!);
 
-if (num > 7 || num < 1);
-{
-    Console.WriteLine("В неделе 7 дней");
-}
-
 if (num == 6 || num == 7)
 {
     Console.WriteLine("Это выходной");
-} 
-else if (num > 1 && num < 6);
-{    
-    Console.WriteLine("Это будний день");
+}
+else
+{
+    Console.WriteLine("Не выходной");
 }
